@@ -1,0 +1,19 @@
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.swatch {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-shadow: 0 1px 1px var(--darker);
+  text-align: center;
+}
+
+.swatch:hover {
+  filter: brightness(0.7);
+}
