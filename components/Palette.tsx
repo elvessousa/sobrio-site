@@ -6,11 +6,13 @@ export function Palette() {
     '#121212',
     '#3a3b3f',
     '#5f5f5f',
+    '#afafaf',
+    '#eeeeee',
+    '#ffffff',
+    '#d7d7ff',
     '#7cdce7',
     '#84afd7',
-    '#afafaf',
     '#d7af87',
-    '#d7d7ff',
     '#fd6389',
   ];
 
@@ -22,7 +24,7 @@ export function Palette() {
           className={styles.swatch}
           style={{ backgroundColor: color }}
         >
-          {color}
+          <span>{color}</span>
         </div>
       ))}
     </div>

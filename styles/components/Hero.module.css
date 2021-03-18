@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -7,6 +8,16 @@
   color: var(--text);
   text-align: center;
   overflow: hidden;
+}
+
+.header::after {
+  content: '';
+  background: linear-gradient(transparent 50%, var(--dark) 98%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .header h1 {
@@ -29,4 +40,45 @@
   text-align: right;
   padding: 2rem;
   color: var(--other);
+}
+
+.cta {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.cta a {
+  padding: 1rem;
+  border-radius: 5px;
+  width: 10rem;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.ctaBtn {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  transition: all 0.2s;
+}
+
+.ctaBtn:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.ctaMain {
+  background: var(--blue);
+  border: 2px solid var(--blue);
+  color: var(--dark);
+  transition: all 0.2s;
+}
+
+.ctaMain:hover {
+  background: var(--cyan);
+  border: 2px solid var(--cyan);
 }

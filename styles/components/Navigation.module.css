@@ -1,0 +1,25 @@
+.navigation {
+  background: var(--darker);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navigation h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation a {
+  padding: 1rem;
+  font-weight: bold;
+}

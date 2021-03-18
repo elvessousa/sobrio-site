@@ -9,6 +9,14 @@ export function Hero() {
       </div>
       <div>
         <img src="images/vscode/screenshot.png" />
+        <div className={styles.cta}>
+          <a className={styles.ctaMain} href="#">
+            Install
+          </a>
+          <a className={styles.ctaBtn} href="#">
+            Know more
+          </a>
+        </div>
       </div>
     </header>
   );
