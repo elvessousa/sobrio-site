@@ -1,4 +1,9 @@
+import { useState } from 'react';
 import styles from '../styles/components/Palette.module.css';
+
+interface SwatchProps {
+  color: string;
+}
 
 export function Palette() {
   const colors = [
@@ -19,14 +24,40 @@ export function Palette() {
   return (
     <div className={styles.palette}>
       {colors.map((color) => (
-        <div
-          key={color}
-          className={styles.swatch}
-          style={{ backgroundColor: color }}
-        >
-          <span>{color}</span>
-        </div>
+        <Swatch key={color} color={color} />
       ))}
     </div>
+  );
+}
+
+export function Swatch({ color }: SwatchProps) {
+  const [copied, setCopied] = useState(false);
+
+  function copyCode(e: React.MouseEvent<HTMLButtonElement>) {
+    const text = e.currentTarget.innerText;
+
+    navigator.clipboard.writeText(text).then(
+      function () {
+        setCopied(true);
+        setTimeout(function () {
+          setCopied(false);
+        }, 3000);
+      },
+      function (err) {
+        console.error('Async: Could not copy text: ', err);
+      }
+    );
+  }
+
+  return (
+    <button
+      key={color}
+      type="button"
+      className={styles.swatch}
+      style={{ backgroundColor: color }}
+      onClick={(e) => copyCode(e)}
+    >
+      <span>{copied ? 'Copied' : color}</span>
+    </button>
   );
 }

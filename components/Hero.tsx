@@ -1,22 +1,49 @@
 import styles from '../styles/components/Hero.module.css';
 
-export function Hero() {
+interface HeroProps {
+  showButtons?: boolean;
+  image: string;
+  description?: string;
+  title: string;
+  repo?: string;
+}
+
+export function Hero({
+  showButtons,
+  image,
+  description,
+  repo,
+  title,
+}: HeroProps) {
+  const githubUrl = 'https://ghbtns.com/github-btn.html?user=elvessousa';
+
   return (
     <header className={styles.header}>
       <div className={styles.productName}>
-        <h1>Sobrio Theme</h1>
-        <p>A theme with sober colors for Vim/Neovim and VSCode</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </div>
       <div>
-        <img src="images/vscode/screenshot.png" />
-        <div className={styles.cta}>
-          <a className={styles.ctaMain} href="#">
-            Install
-          </a>
-          <a className={styles.ctaBtn} href="#">
-            Know more
-          </a>
-        </div>
+        <img src={image} />
+        {showButtons && (
+          <div className={styles.cta}>
+            <a className={styles.ctaMain} href="#">
+              Install
+            </a>
+            <a className={styles.ctaBtn} href="#">
+              Know more
+            </a>
+          </div>
+        )}
+        {repo && (
+          <iframe
+            src={`${githubUrl}&repo=${repo}&type=star&count=true&size=large`}
+            scrolling="0"
+            width="170"
+            height="30"
+            title="GitHub"
+          ></iframe>
+        )}
       </div>
     </header>
   );

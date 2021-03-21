@@ -1,33 +1,38 @@
-.palette {
+.languages {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
 
-.swatch {
+.language {
   flex: 1;
   font-weight: bold;
   font-size: 0.8rem;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s;
   text-shadow: 0 1px 1px var(--darker);
   text-align: center;
   position: relative;
-  border: 0;
 }
 
-.swatch:hover {
+.language:hover {
   filter: brightness(0.7);
 }
 
-.swatch span {
-  background: var(--dark);
+.language img {
+  filter: invert(1);
+  width: 100%;
+}
+
+.language span {
   border-top-left-radius: 5px;
   color: var(--text);
-  padding: 0.25em 0.7em;
+  opacity: 0.7;
+  /* padding: 0.25em 0.7em; */
   position: absolute;
   bottom: 0;
   right: 0;
+  left: 0;
 }

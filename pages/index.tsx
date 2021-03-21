@@ -1,58 +1,44 @@
-import Head from 'next/head';
-import { Hero } from '../components/Hero';
-import { Navigation } from '../components/Navigation';
+import { Layout } from '../components/Layout';
 import { Palette } from '../components/Palette';
+import { Languages } from '../components/Languages';
 import { Screens } from '../components/Screens';
+import { AppsSupported } from '../components/AppSupported';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Sobrio Theme</title>
-      </Head>
-      <Navigation />
-      <Hero />
+    <Layout
+      title="Sobrio Theme"
+      heroImage="./images/screens/vscode/screenshot.png"
+      description="A theme with sober colors, hence the name"
+      heroButtons
+    >
+      <section className="available">
+        <h2>Available for</h2>
+        <AppsSupported />
+      </section>
+      <hr />
 
-      <main className="main">
-        <section className="available">
-          <h2>Available for</h2>
-          <p>Soon...</p>
-        </section>
-        <hr />
+      <section className="colors">
+        <h2>Palette</h2>
+        <Palette />
+      </section>
+      <hr />
 
-        <section className="colors">
-          <h2>Palette</h2>
-          <Palette />
-        </section>
-        <hr />
+      <section className="languages">
+        <h2>Languages supported</h2>
+        <Languages />
+      </section>
 
-        <section className="screenshots">
-          <h2>Screenshots</h2>
-          <Screens />
-        </section>
-        <hr />
+      {/*<section className="screenshots">
+        <h2>Screenshots</h2>
+        <Screens />
+      </section>
+      <hr />
 
-        <section className="trial">
-          <h2>Test the theme</h2>
-          <p>Soon...</p>
-        </section>
-      </main>
-
-      <footer className="footer">
-        <p>
-          Copyright &copy;{' '}
-          <span>
-            <a
-              href="https://elvessousa.com.br"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Elves Sousa
-            </a>{' '}
-          </span>
-          - 2021
-        </p>
-      </footer>
-    </div>
+      <section className="trial">
+        <h2>Test the theme</h2>
+        <p>Soon...</p>
+        </section> */}
+    </Layout>
   );
 }

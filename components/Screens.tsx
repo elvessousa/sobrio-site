@@ -16,7 +16,7 @@ export function Screens() {
     <div className={styles.screens}>
       {screens.map(({ name, label }) => (
         <a key={name} href="#" data-label="ver galeria">
-          <img src={`images/${name}/screen.png`} />
+          <img src={`images/screens/${name}/screen.png`} />
           <span>{label}</span>
         </a>
       ))}

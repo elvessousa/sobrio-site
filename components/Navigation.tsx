@@ -4,7 +4,9 @@ export function Navigation() {
   return (
     <nav className={styles.navigation}>
       <div className={styles.brand}>
-        <h1>Sobrio</h1>
+        <h1>
+          <a href="/">Sobrio</a>
+        </h1>
       </div>
       <ul>
         <li>

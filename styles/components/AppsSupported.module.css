@@ -1,10 +1,10 @@
-.palette {
+.apps {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-.swatch {
+.app {
   flex: 1;
   font-weight: bold;
   font-size: 0.8rem;
@@ -15,19 +15,24 @@
   text-shadow: 0 1px 1px var(--darker);
   text-align: center;
   position: relative;
-  border: 0;
 }
 
-.swatch:hover {
+.app:hover {
   filter: brightness(0.7);
 }
 
-.swatch span {
-  background: var(--dark);
+.app img {
+  filter: invert(1);
+  width: 100%;
+}
+
+.app span {
   border-top-left-radius: 5px;
   color: var(--text);
-  padding: 0.25em 0.7em;
+  opacity: 0.7;
+  /* padding: 0.25em 0.7em; */
   position: absolute;
   bottom: 0;
   right: 0;
+  left: 0;
 }
