@@ -13,7 +13,7 @@ It has support for italic fonts, too. The font used in the screenshots is Victor
 
 To use it, follow these steps:
 
-1. Copy the `colors/sobrio.vim` file to your NVIM colors directory, usually `~/.vim/nvim/colors/`
+1. Copy the `colors/sobrio.vim` file to your VIM colors directory, usually `~/.vim/colors/`
 2. Set the color scheme: `:colorscheme sobrio`.
 3. ???
 4. Profit!
