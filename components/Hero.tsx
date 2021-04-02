@@ -18,19 +18,21 @@ export function Hero({
   const githubUrl = 'https://ghbtns.com/github-btn.html?user=elvessousa';
 
   return (
-    <header className={styles.header}>
-      <div className={styles.productName}>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </div>
-      <div>
-        <img src={image} />
+    <header
+      className={styles.header}
+      style={{ backgroundImage: `url(${image})` }}
+    >
+      <div className={styles.content}>
+        <div className={styles.productName}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
         {showButtons && (
           <div className={styles.cta}>
-            <a className={styles.ctaMain} href="#">
+            <a className={styles.ctaMain} href="#apps">
               Install
             </a>
-            <a className={styles.ctaBtn} href="#">
+            <a className={styles.ctaBtn} href="#about">
               Know more
             </a>
           </div>
