@@ -7,7 +7,7 @@ export function AppsSupported() {
   return (
     <div className={styles.apps}>
       {apps.map((app) => {
-        const name = app.replaceAll(' ', '').toLowerCase();
+        const name = app.replace(/\s/g, '').toLowerCase();
         return (
           <a key={app} href={`app/${name}`} className={styles.app}>
             <img src={`/images/icons/apps/${name}.svg`} />
