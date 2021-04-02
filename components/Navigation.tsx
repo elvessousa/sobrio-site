@@ -5,21 +5,22 @@ export function Navigation() {
     <nav className={styles.navigation}>
       <div className={styles.brand}>
         <h1>
+          <img src="/logo.png" />
           <a href="/">Sobrio</a>
         </h1>
       </div>
       <ul>
         <li>
-          <a href="#palette">Palette</a>
+          <a href="/#apps">Apps</a>
         </li>
         <li>
-          <a href="#screen">Screenshots</a>
+          <a href="/#palette">Palette</a>
         </li>
         <li>
-          <a href="#test">Test</a>
+          <a href="/#languages">Screenshots</a>
         </li>
       </ul>
-      <div className={styles.action}>stars</div>
+      {/*<div className={styles.action}>stars</div> */}
     </nav>
   );
 }
