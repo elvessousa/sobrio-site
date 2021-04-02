@@ -36,3 +36,21 @@
   right: 0;
   left: 0;
 }
+
+@media (max-width: 700px) {
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .app {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  .apps {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

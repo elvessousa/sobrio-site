@@ -24,7 +24,8 @@ body {
   font-family: 'Quicksand', Cantarell, Helvetica Neue, sans-serif;
   background-color: var(--dark);
   color: var(--text);
-  font-size: 16px;
+  font-size: 14pt;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -59,6 +60,12 @@ code {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+p > code,
+li > code {
+  color: #84afd7;
+  word-break: break-word;
+}
+
 section {
   margin: 4rem 0;
   color: var(--other);
@@ -71,8 +78,13 @@ img {
 p,
 ul,
 ol {
-  max-width: 40rem;
+  max-width: 30rem;
   margin: 1rem auto;
+}
+
+ol li::marker {
+  color: #3a3b3f;
+  font-weight: bold;
 }
 
 .container {
@@ -88,7 +100,7 @@ ol {
   padding: 5rem 0;
   flex-direction: column;
   justify-content: center;
-  max-width: 50rem;
+  max-width: 45rem;
   align-items: center;
   margin: auto;
 }
@@ -127,5 +139,8 @@ ol {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .main {
+    padding: 2rem;
   }
 }

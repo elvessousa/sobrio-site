@@ -13,6 +13,7 @@
 
 .navigation ul {
   list-style: none;
+  margin: 0;
 }
 
 .navigation li {
@@ -22,4 +23,16 @@
 .navigation a {
   padding: 1rem;
   font-weight: bold;
+}
+
+.brand img {
+  float: left;
+  margin-top: 0.2rem;
+  width: 1em;
+}
+
+@media (max-width: 600px) {
+  .navigation ul {
+    display: none;
+  }
 }

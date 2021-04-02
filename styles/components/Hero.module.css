@@ -4,7 +4,8 @@
   align-items: center;
   padding: 2rem;
   height: 100vh;
-  background: var(--darker);
+  background: var(--darker) no-repeat center fixed;
+  background-size: 90%;
   color: var(--text);
   text-align: center;
   overflow: hidden;
@@ -12,7 +13,7 @@
 
 .header::after {
   content: '';
-  background: linear-gradient(transparent 50%, var(--dark) 98%);
+  background: linear-gradient(transparent 30%, var(--dark) 78%);
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +25,7 @@
   font-size: 3rem;
   color: var(--light);
   margin: 0;
+  z-index: 1;
 }
 
 .header div {
@@ -40,9 +42,9 @@
 .header iframe {
   position: absolute;
   border: 0;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-25%);
+  bottom: -1rem;
+  left: 55%;
+  transform: translateX(-50%);
   z-index: 1;
   text-align: center;
 }
@@ -51,13 +53,15 @@
   text-align: right;
   padding: 2rem;
   color: var(--other);
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-.cta {
+.content {
   position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 10%;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -92,4 +96,42 @@
 .ctaMain:hover {
   background: var(--cyan);
   border: 2px solid var(--cyan);
+}
+
+@media (max-width: 700px) {
+  .header h1 {
+    font-size: 8vw;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .header img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    right: 0;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .cta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cta a {
+    margin-left: 0;
+    width: 8rem;
+    padding: 0.5rem;
+  }
 }
