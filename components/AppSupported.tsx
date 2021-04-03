@@ -19,7 +19,7 @@ export function AppsSupported() {
         <div key={app} className={styles.app} style={{ opacity: 0.3 }}>
           <img
             src={`/images/icons/apps/${app
-              .replaceAll(' ', '')
+              .replace(/\s/g, '')
               .toLowerCase()}.svg`}
           />
           <span>{app} (soon)</span>
