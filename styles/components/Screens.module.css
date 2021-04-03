@@ -1,15 +1,15 @@
 .screens {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
 }
 
 .screens a {
-  font-weight: bold;
-  text-align: center;
-  position: relative;
   color: var(--text);
+  font-weight: bold;
+  position: relative;
+  text-align: center;
 }
 
 .screens a:hover {
@@ -23,22 +23,22 @@
 
 .screen a::before {
   content: 'ver galeria';
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
 }
 
 .screens span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   background: var(--dark);
-  padding: 0.25rem 0.7rem;
   border-top-left-radius: 5px;
+  bottom: 0;
+  padding: 0.25rem 0.7rem;
+  position: absolute;
+  right: 0;
 }
 
 .screens img {
-  max-width: 100%;
-  border: 0.5rem solid #000;
   border-radius: 5px;
+  border: 0.5rem solid #000;
+  max-width: 100%;
 }

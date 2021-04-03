@@ -1,21 +1,21 @@
 .palette {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .swatch {
-  flex: 1;
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 3rem;
   border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-shadow: 0 1px 1px var(--darker);
-  text-align: center;
-  position: relative;
   border: 0;
+  cursor: pointer;
+  flex: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3rem;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px var(--darker);
+  transition: all 0.2s;
 }
 
 .swatch:hover {
@@ -25,10 +25,10 @@
 .swatch span {
   background: var(--dark);
   border-top-left-radius: 5px;
+  bottom: 0;
   color: var(--text);
   padding: 0.25em 0.7em;
   position: absolute;
-  bottom: 0;
   right: 0;
 }
 
@@ -42,7 +42,7 @@
 @media (max-width: 700px) and (orientation: landscape) {
   .palette {
     display: grid;
-    padding: 1rem;
     grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
   }
 }

@@ -17,7 +17,7 @@ export function Navigation() {
           <a href="/#palette">Palette</a>
         </li>
         <li>
-          <a href="/#languages">Screenshots</a>
+          <a href="/#languages">Languages</a>
         </li>
       </ul>
       {/*<div className={styles.action}>stars</div> */}
