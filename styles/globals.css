@@ -79,7 +79,7 @@ p,
 ul,
 ol {
   margin: 1rem auto;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
 ol li::marker {
