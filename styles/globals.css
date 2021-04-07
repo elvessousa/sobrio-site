@@ -75,6 +75,12 @@ img {
   max-width: 100%;
 }
 
+img + em {
+  color: var(--mute);
+  text-align: center;
+  display: block;
+}
+
 p,
 ul,
 ol {
@@ -85,6 +91,14 @@ ol {
 ol li::marker {
   color: #3a3b3f;
   font-weight: bold;
+}
+
+article a {
+  color: var(--cyan);
+}
+
+article a:hover {
+  text-decoration: underline;
 }
 
 .container {

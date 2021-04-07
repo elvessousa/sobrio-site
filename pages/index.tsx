@@ -15,8 +15,8 @@ export default function Home() {
         <h2 id="about">About</h2>
         <p>
           Sobrio is theme made to create a comfortable experience while coding.
-          I made it because I was a little tired of the purple/magenta colored
-          themes that seem to be the hype today. Nothing against it, but it is
+          I made it because I was a little tired of purple / magenta colored
+          themes that seem to be the norm today. Nothing against it, but it is
           not my type.
         </p>
         <p>
