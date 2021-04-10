@@ -2,17 +2,20 @@ import { Layout } from '../components/Layout';
 import { Palette } from '../components/Palette';
 import { Languages } from '../components/Languages';
 import { AppsSupported } from '../components/AppSupported';
+import { useTranslation } from '../translation/useTranslation';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <Layout
-      title="Sobrio Theme"
+      title="Sobrio"
       heroImage="./images/screens/vscode/screenshot.png"
-      description="A theme with sober colors, hence the name"
+      description={t('slogan')}
       heroButtons
     >
       <section className="about">
-        <h2 id="about">About</h2>
+        <h2 id="about">{t('about')}</h2>
         <p>
           Sobrio is theme made to create a comfortable experience while coding.
           I made it because I was a little tired of purple / magenta colored
@@ -28,19 +31,19 @@ export default function Home() {
       <hr />
 
       <section className="available">
-        <h2 id="apps">Available for</h2>
+        <h2 id="apps">{t('available')}</h2>
         <AppsSupported />
       </section>
       <hr />
 
       <section id="palette" className="colors">
-        <h2>Palette</h2>
+        <h2>{t('palette')}</h2>
         <Palette />
       </section>
       <hr />
 
       <section id="languages" className="languages">
-        <h2>Languages supported</h2>
+        <h2>{t('lsup')}</h2>
         <Languages />
       </section>
     </Layout>
