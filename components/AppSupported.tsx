@@ -1,6 +1,9 @@
+import { useContext } from 'react';
 import styles from '../styles/components/AppsSupported.module.css';
+import { LanguageContext } from '../translation/LanguageContext';
 
 export function AppsSupported() {
+  const { locale } = useContext(LanguageContext);
   const apps = ['VS Code', 'Neovim', 'Vim', 'Alacritty'];
   const todo = ['Sublime Text', 'Atom', 'GNU Emacs', 'Tmux'];
 
@@ -9,7 +12,7 @@ export function AppsSupported() {
       {apps.map((app) => {
         const name = app.replace(/\s/g, '').toLowerCase();
         return (
-          <a key={app} href={`app/${name}`} className={styles.app}>
+          <a key={app} href={`${locale}/${name}`} className={styles.app}>
             <img src={`/images/icons/apps/${name}.svg`} />
             <span>{app}</span>
           </a>

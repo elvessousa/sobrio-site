@@ -3,15 +3,13 @@ export function Footer() {
     <footer className="footer">
       <p>
         Copyright &copy;{' '}
-        <span>
-          <a
-            href="https://elvessousa.com.br"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Elves Sousa
-          </a>{' '}
-        </span>
+        <a
+          href="https://elvessousa.com.br"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Elves Sousa
+        </a>{' '}
         - 2021
       </p>
     </footer>

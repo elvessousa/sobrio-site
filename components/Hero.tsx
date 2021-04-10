@@ -1,4 +1,5 @@
 import styles from '../styles/components/Hero.module.css';
+import { useTranslation } from '../translation/useTranslation';
 
 interface HeroProps {
   showButtons?: boolean;
@@ -15,6 +16,7 @@ export function Hero({
   repo,
   title,
 }: HeroProps) {
+  const { t } = useTranslation();
   const githubUrl = 'https://ghbtns.com/github-btn.html?user=elvessousa';
 
   return (
@@ -30,10 +32,10 @@ export function Hero({
         {showButtons && (
           <div className={styles.cta}>
             <a className={styles.ctaMain} href="#apps">
-              Install
+              {t('install')}
             </a>
             <a className={styles.ctaBtn} href="#about">
-              Know more
+              {t('more')}
             </a>
           </div>
         )}

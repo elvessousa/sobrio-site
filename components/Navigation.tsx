@@ -1,6 +1,9 @@
 import styles from '../styles/components/Navigation.module.css';
+import { useTranslation } from '../translation/useTranslation';
 
 export function Navigation() {
+  const { t } = useTranslation();
+
   return (
     <nav className={styles.navigation}>
       <div className={styles.brand}>
@@ -14,13 +17,12 @@ export function Navigation() {
           <a href="/#apps">Apps</a>
         </li>
         <li>
-          <a href="/#palette">Palette</a>
+          <a href="/#palette">{t('palette')}</a>
         </li>
         <li>
-          <a href="/#languages">Languages</a>
+          <a href="/#languages">{t('langs')}</a>
         </li>
       </ul>
-      {/*<div className={styles.action}>stars</div> */}
     </nav>
   );
 }

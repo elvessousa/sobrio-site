@@ -2,6 +2,7 @@ import styles from '../styles/components/Languages.module.css';
 
 export function Languages() {
   const languages = [
+    'C',
     'CSS3',
     'Elixir',
     'HTML5',
@@ -11,8 +12,10 @@ export function Languages() {
     'PHP',
     'Python',
     'Rust',
+    'React',
     'SVG',
     'Sass',
+    'Shell',
     'TypeScript',
   ];
 
