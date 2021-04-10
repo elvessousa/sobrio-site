@@ -1,7 +1,7 @@
 .languages {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .language {
@@ -46,7 +46,7 @@
 @media (max-width: 700px) and (orientation: landscape) {
   .languages {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     padding: 1rem;
   }
 }

@@ -23,7 +23,7 @@
 
 .header h1 {
   color: var(--light);
-  font-size: 3rem;
+  font-size: 8vw;
   margin: 0;
   z-index: 1;
 }
@@ -35,6 +35,8 @@
 }
 
 .header p {
+  color: var(--light);
+  font-weight: bold;
   padding: 0 0 1rem;
 }
 
