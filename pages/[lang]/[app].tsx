@@ -32,7 +32,7 @@ export default function AppPage({ pageData }: AppPageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const pageData = await getContentData(`/${params.app}`);
+  const pageData = await getContentData(`/${params.lang}/${params.app}`);
 
   return {
     props: {
