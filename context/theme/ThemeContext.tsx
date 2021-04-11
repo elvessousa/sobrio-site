@@ -15,10 +15,8 @@ export function ThemeProvider({ children }) {
       return;
     }
     const colors = localStorage.getItem('theme');
-    if (colors) {
-      document.body.className = theme;
-      setTheme(colors);
-    }
+    document.querySelector('body').className = theme;
+    setTheme(colors);
   }, [theme]);
 
   return (
