@@ -14,7 +14,7 @@ export function ThemeProvider({ children }) {
     if (!window) {
       return;
     }
-    const colors = localStorage.getItem('theme');
+    const colors = localStorage.getItem('theme') || 'dark';
     document.querySelector('body').className = theme;
     setTheme(colors);
   }, [theme]);
