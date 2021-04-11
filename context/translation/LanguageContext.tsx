@@ -16,7 +16,7 @@ export function LanguageProvider({ children }) {
       return;
     }
 
-    const language = localStorage.getItem('lang');
+    const language = localStorage.getItem('lang') || defaultLanguage;
     setLocale(language);
   }, [locale]);
 
