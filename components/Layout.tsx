@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { ReactNode } from 'react';
 import { Hero } from '../components/Hero';
 import { Navigation } from '../components/Navigation';
+import { useTheme } from '../hooks/useTheme';
 import { Footer } from './Footer';
 
 interface LayoutProps {
@@ -21,6 +22,9 @@ export function Layout({
   repo,
   children,
 }: LayoutProps) {
+  const { theme } = useTheme();
+
+  console.log(theme);
   return (
     <div>
       <Head>

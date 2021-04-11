@@ -1,5 +1,5 @@
 import styles from '../styles/components/Hero.module.css';
-import { useTranslation } from '../translation/useTranslation';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface HeroProps {
   showButtons?: boolean;

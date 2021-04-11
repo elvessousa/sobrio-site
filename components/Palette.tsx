@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTheme } from '../hooks/useTheme';
 import styles from '../styles/components/Palette.module.css';
 
 interface SwatchProps {
@@ -6,7 +7,9 @@ interface SwatchProps {
 }
 
 export function Palette() {
-  const colors = [
+  const { theme } = useTheme();
+
+  const darkColors = [
     '#000000',
     '#121212',
     '#3a3b3f',
@@ -20,6 +23,23 @@ export function Palette() {
     '#d7af87',
     '#fd6389',
   ];
+
+  const lightColors = [
+    '#000000',
+    '#121212',
+    '#3a3b3f',
+    '#5f5f5f',
+    '#afafaf',
+    '#eeeeee',
+    '#ffffff',
+    '#9787af',
+    '#5fafaf',
+    '#6787af',
+    '#af875f',
+    '#dd4c4f',
+  ];
+
+  const colors = theme === 'dark' ? darkColors : lightColors;
 
   return (
     <div className={styles.palette}>
