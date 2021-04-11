@@ -1,10 +1,13 @@
 import '../styles/globals.css';
-import { LanguageProvider } from '../translation/LanguageContext';
+import { LanguageProvider } from '../context/translation/LanguageContext';
+import { ThemeProvider } from '../context/theme/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
   return (
     <LanguageProvider>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </LanguageProvider>
   );
 }
