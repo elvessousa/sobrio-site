@@ -25,6 +25,18 @@
   padding: 1rem;
 }
 
+.navigation button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  outline: none;
+}
+
+.navigation button img {
+  width: 1.2rem;
+}
+
 .brand img {
   float: left;
   margin-top: 0.2rem;

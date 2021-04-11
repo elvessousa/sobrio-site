@@ -23,7 +23,7 @@
 
 .header h1 {
   color: var(--light);
-  font-size: 8vw;
+  font-size: 6vw;
   margin: 0;
   z-index: 1;
 }
@@ -86,7 +86,6 @@
 }
 
 .ctaBtn {
-  background: rgba(0, 0, 0, 0.3);
   border: 2px solid var(--blue);
   color: var(--blue);
   transition: all 0.2s;
