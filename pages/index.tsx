@@ -2,7 +2,7 @@ import { Layout } from '../components/Layout';
 import { Palette } from '../components/Palette';
 import { Languages } from '../components/Languages';
 import { AppsSupported } from '../components/AppSupported';
-import { useTranslation } from '../translation/useTranslation';
+import { useTranslation } from '../hooks/useTranslation';
 
 export default function Home() {
   const { t } = useTranslation();
