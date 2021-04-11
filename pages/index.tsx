@@ -11,7 +11,7 @@ export default function Home() {
     <Layout
       title="Sobrio"
       heroImage="./images/screens/vscode/screenshot.png"
-      description={t('slogan')}
+      description={''}
       heroButtons
     >
       <section className="about">
