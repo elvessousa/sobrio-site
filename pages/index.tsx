@@ -3,14 +3,17 @@ import { Palette } from '../components/Palette';
 import { Languages } from '../components/Languages';
 import { AppsSupported } from '../components/AppSupported';
 import { useTranslation } from '../hooks/useTranslation';
+import { useTheme } from '../hooks/useTheme';
 
 export default function Home() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
+  const prefix = theme === 'dark' ? '' : 'light/';
 
   return (
     <Layout
       title="Sobrio"
-      heroImage="./images/screens/vscode/screenshot.png"
+      heroImage={`./images/screens/vscode/${prefix}screenshot.png`}
       description={t('slogan')}
       heroButtons
     >
