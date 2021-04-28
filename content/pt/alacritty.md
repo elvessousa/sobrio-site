@@ -3,6 +3,7 @@ lang: pt
 title: 'Sobrio para Alacritty'
 description: 'Um tema para Alacritty cores sóbrias, daí o nome'
 image: '/images/screens/alacritty/window.png'
+link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
 ---
 

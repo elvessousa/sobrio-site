@@ -3,6 +3,7 @@ lang: en
 title: 'Sobrio Theme for NeoVim'
 description: 'A theme for NeoVim with sober colors, hence the name'
 image: '/images/screens/vim/window.png'
+link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
 ---
 

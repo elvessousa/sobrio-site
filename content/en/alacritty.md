@@ -3,6 +3,7 @@ lang: en
 title: 'Sobrio Theme for Alacritty'
 description: 'A theme for Alacritty with sober colors, hence the name'
 image: '/images/screens/alacritty/window.png'
+link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
 ---
 

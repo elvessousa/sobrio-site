@@ -3,6 +3,7 @@ lang: en
 title: 'Sobrio Theme for VS Code'
 description: 'A theme for VSCode with sober colors, hence the name'
 image: '/images/screens/vscode/window.png'
+link: 'https://marketplace.visualstudio.com/items?itemName=elvessousa.sobrio'
 repo: 'sobrio-vscode'
 ---
 

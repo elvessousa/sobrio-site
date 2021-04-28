@@ -13,11 +13,12 @@ interface AppPageProps {
     lang: string;
     title: string;
     repo?: string;
+    link?: string;
   };
 }
 
 export default function AppPage({ pageData }: AppPageProps) {
-  const { title, description, contentHtml, image, repo } = pageData;
+  const { title, description, contentHtml, image, repo, link } = pageData;
 
   return (
     <Layout
@@ -27,6 +28,14 @@ export default function AppPage({ pageData }: AppPageProps) {
       repo={repo}
     >
       <article dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <a
+        href={link}
+        className="install-button"
+        target="_blank"
+        rel="noreferrer noopenenr"
+      >
+        Install
+      </a>
     </Layout>
   );
 }

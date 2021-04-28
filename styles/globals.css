@@ -133,6 +133,25 @@ article a:hover {
   padding: 5rem 0;
 }
 
+.install-button {
+  background: var(--blue);
+  border-radius: 5px;
+  border: 2px solid var(--blue);
+  color: var(--dark);
+  display: block;
+  font-weight: bold;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s;
+  width: 10rem;
+}
+
+.install-button:hover {
+  border-color: var(--cyan);
+  background-color: var(--cyan);
+}
+
 .footer {
   align-items: center;
   background: var(--darker);
