@@ -1,0 +1,18 @@
+export const screenshots = [
+  { type: 'cpp', label: 'C++' },
+  { type: 'css', label: 'Cascading Style Sheets (CSS)' },
+  { type: 'elixir', label: 'Elixir' },
+  { type: 'html', label: 'HyperText Markup Language (HTML)' },
+  { type: 'json', label: 'JavaScript Object Model (JSON)' },
+  { type: 'js', label: 'JavaScript' },
+  { type: 'jsx', label: 'JavaScript Extended (React)' },
+  { type: 'markdown', label: 'Markdown' },
+  { type: 'php', label: 'PHP' },
+  { type: 'python', label: 'Python' },
+  { type: 'rust', label: 'Rust' },
+  { type: 'sass', label: 'Syntatically Awesome Style Sheets (Sass)' },
+  { type: 'scss', label: 'Sassy CSS (SCSS)' },
+  { type: 'svg', label: 'Scalable Vector Graphics (SVG)' },
+  { type: 'ts', label: 'TypeScript' },
+  { type: 'yaml', label: 'YAML' },
+];
