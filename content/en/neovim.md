@@ -5,6 +5,7 @@ description: 'A theme for NeoVim with sober colors, hence the name'
 image: '/images/screens/vim/window.png'
 link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
+app: 'vim'
 ---
 
 This is a theme for **Neovim**, with sober colors (at least for me), hence the name.
@@ -26,57 +27,3 @@ If you want to make it your default, just add this line to your `init.vim`:
 ```vim
 colorscheme sobrio
 ```
-
-## Screenshots
-
-### HTML
-
-![HTML](../images/screens/vim/html.png)
-
-### JavaScript / Typescript
-
-![JavaScript](../images/screens/vim/js.png)
-
-### React
-
-![JavaScript](../images/screens/vim/jsx.png)
-
-### CSS
-
-![CSS](../images/screens/vim/css.png)
-
-### SCSS
-
-![SCSS](../images/screens/vim/scss.png)
-
-### Sass
-
-![Sass](../images/screens/vim/sass.png)
-
-### SVG
-
-![SVG](../images/screens/vim/svg.png)
-
-### YAML
-
-![YAML](../images/screens/vim/yaml.png)
-
-### JSON
-
-![JSON](../images/screens/vim/json.png)
-
-### Python
-
-![Python](../images/screens/vim/python.png)
-
-### PHP
-
-![PHP](../images/screens/vim/php.png)
-
-### Rust
-
-![Rust](../images/screens/vim/rust.png)
-
-### C++
-
-![C++](../images/screens/vim/cpp.png)

@@ -5,6 +5,7 @@ description: 'A theme for Alacritty with sober colors, hence the name'
 image: '/images/screens/alacritty/window.png'
 link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
+app: 'alacritty'
 ---
 
 This is a theme for **Alacritty**, the terminal emulator. It uses the colors from the Sobrio theme to make your experience more unique.
