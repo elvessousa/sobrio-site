@@ -1,6 +1,9 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import { Layout } from '../../components/Layout';
+import { Screens } from '../../components/Screens';
+import { useTheme } from '../../hooks/useTheme';
+import { useTranslation } from '../../hooks/useTranslation';
 import { getAllIds, getContentData } from '../../lib/apps';
 
 interface AppPageProps {
@@ -14,17 +17,21 @@ interface AppPageProps {
     title: string;
     repo?: string;
     link?: string;
+    app?: string;
   };
 }
 
 export default function AppPage({ pageData }: AppPageProps) {
-  const { title, description, contentHtml, image, repo, link } = pageData;
+  const { t } = useTranslation();
+  const { theme } = useTheme();
+  const { app, title, description, contentHtml, image, repo, link } = pageData;
+  const heroImage = theme === 'light' ? 'light/window.png' : 'window.png';
 
   return (
     <Layout
       title={title}
       description={description}
-      heroImage={image}
+      heroImage={`/images/screens/${app}/${heroImage}`}
       repo={repo}
     >
       <article dangerouslySetInnerHTML={{ __html: contentHtml }} />
@@ -34,8 +41,9 @@ export default function AppPage({ pageData }: AppPageProps) {
         target="_blank"
         rel="noreferrer noopenenr"
       >
-        Install
+        {t('install')}
       </a>
+      {app && <Screens app={app} title={t('screenshots')} />}
     </Layout>
   );
 }
