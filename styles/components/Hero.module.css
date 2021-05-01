@@ -12,7 +12,7 @@
 }
 
 .header::after {
-  background: linear-gradient(transparent 30%, var(--dark) 78%);
+  background: linear-gradient(var(--transparent) 30%, var(--dark) 78%);
   bottom: 0;
   content: '';
   left: 0;

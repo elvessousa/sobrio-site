@@ -1,7 +1,7 @@
 .screens {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   place-items: center;
 }
 
@@ -10,35 +10,14 @@
   font-weight: bold;
   position: relative;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.screens a:hover {
-  color: var(--red);
-}
-
-.screens a:active {
-  color: var(--red);
-  filter: brightness(0.7);
-}
-
-.screen a::before {
-  content: 'ver galeria';
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.screens span {
-  background: var(--dark);
-  border-top-left-radius: 5px;
-  bottom: 0;
-  padding: 0.25rem 0.7rem;
-  position: absolute;
-  right: 0;
+.screens h3 {
+  margin: 0;
 }
 
 .screens img {
   border-radius: 5px;
-  border: 0.5rem solid #000;
   max-width: 100%;
 }
