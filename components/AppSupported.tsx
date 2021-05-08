@@ -1,5 +1,8 @@
+import Link from 'next/link';
+
 import { useTheme } from '../hooks/useTheme';
 import { useTranslation } from '../hooks/useTranslation';
+
 import styles from '../styles/components/AppsSupported.module.css';
 
 export function AppsSupported() {
@@ -15,13 +18,15 @@ export function AppsSupported() {
       {apps.map((app) => {
         const name = app.replace(/\s/g, '').toLowerCase();
         return (
-          <a key={app} href={`${locale}/${name}`} className={styles.app}>
-            <img
-              src={`/images/icons/apps/${name}.svg`}
-              style={{ filter: imgFilter }}
-            />
-            <span>{app}</span>
-          </a>
+          <Link key={app} href={`${locale}/${name}`}>
+            <a className={styles.app}>
+              <img
+                src={`/images/icons/apps/${name}.svg`}
+                style={{ filter: imgFilter }}
+              />
+              <span>{app}</span>
+            </a>
+          </Link>
         );
       })}
       {todo.map((app) => (

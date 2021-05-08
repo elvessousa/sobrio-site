@@ -1,6 +1,9 @@
-import styles from '../styles/components/Navigation.module.css';
+import Link from 'next/link';
+
 import { useTranslation } from '../hooks/useTranslation';
 import { useTheme } from '../hooks/useTheme';
+
+import styles from '../styles/components/Navigation.module.css';
 
 export function Navigation() {
   const { t } = useTranslation();
@@ -18,18 +21,26 @@ export function Navigation() {
       <div className={styles.brand}>
         <h1>
           <img src={`/logo-${theme}.png`} />
-          <a href="/">Sobrio</a>
+          <Link href="/">
+            <a>Sobrio</a>
+          </Link>
         </h1>
       </div>
       <ul>
         <li>
-          <a href="/#apps">Apps</a>
+          <Link href="/#apps">
+            <a href="/#apps">Apps</a>
+          </Link>
         </li>
         <li>
-          <a href="/#palette">{t('palette')}</a>
+          <Link href="/#palette">
+            <a href="/#palette">{t('palette')}</a>
+          </Link>
         </li>
         <li>
-          <a href="/#languages">{t('langs')}</a>
+          <Link href="/#languages">
+            <a href="/#languages">{t('langs')}</a>
+          </Link>
         </li>
         <button onClick={handleThemeChange}>
           <img src="/images/icons/lamp.svg" style={{ filter: imgFilter }} />
