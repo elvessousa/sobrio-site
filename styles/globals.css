@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body.dark {
+body {
   --transparent: rgba(0, 0, 0, 0);
   --blue: #84afd7;
   --cyan: #7cdce7;
@@ -16,6 +16,13 @@ body.dark {
   --other: #5f5f5f;
   --red: #fd6389;
   --text: #eeeeee;
+  background-color: var(--dark);
+  color: var(--text);
+  font-family: 'Quicksand', Cantarell, Helvetica Neue, sans-serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body.light {
@@ -32,16 +39,6 @@ body.light {
   --other: #4e4e4e;
   --red: #dd4c4f;
   --text: #202020;
-}
-
-body {
-  background-color: var(--dark);
-  color: var(--text);
-  font-family: 'Quicksand', Cantarell, Helvetica Neue, sans-serif;
-  font-size: 14pt;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
 }
 
 h1 {

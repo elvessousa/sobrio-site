@@ -1,7 +1,7 @@
 import { Layout } from '../components/Layout';
 import { Palette } from '../components/Palette';
 import { Languages } from '../components/Languages';
-import { AppsSupported } from '../components/AppSupported';
+import { AppsSupported } from '../components/AppsSupported';
 import { useTranslation } from '../hooks/useTranslation';
 import { useTheme } from '../hooks/useTheme';
 
@@ -27,8 +27,7 @@ export default function Home() {
         </p>
         <p>
           It's been actively developed: more apps supported and variants to come
-          soon. For those who like it white, a light theme is being made. Just
-          you wait!
+          soon. For those who like it white, a light theme is available.
         </p>
       </section>
       <hr />

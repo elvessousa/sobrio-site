@@ -9,7 +9,7 @@ interface LayoutProps {
   description: string;
   heroImage: string;
   heroButtons?: boolean;
-  children: ReactNode;
+  children?: ReactNode;
   repo?: string;
 }
 
