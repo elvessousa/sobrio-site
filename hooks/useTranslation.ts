@@ -3,11 +3,11 @@ import { LanguageContext } from '../context/translation/LanguageContext';
 import { translationStrings } from '../lib/strings';
 
 export function useTranslation() {
-  const { locale } = useContext(LanguageContext);
+  const { locale, setLocale } = useContext(LanguageContext);
 
   function t(string: string) {
     return translationStrings[locale][string];
   }
 
-  return { t, locale };
+  return { t, locale, setLocale };
 }

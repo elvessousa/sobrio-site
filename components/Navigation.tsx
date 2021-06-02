@@ -6,14 +6,20 @@ import { useTheme } from '../hooks/useTheme';
 import styles from '../styles/components/Navigation.module.css';
 
 export function Navigation() {
-  const { t } = useTranslation();
+  const { t, locale, setLocale } = useTranslation();
   const { theme, setTheme } = useTheme();
   const imgFilter = theme == 'dark' ? 'invert(1)' : '';
 
   function handleThemeChange() {
-    const currentTheme = theme == 'dark' ? 'light' : 'dark';
-    setTheme(currentTheme);
-    localStorage.setItem('theme', currentTheme);
+    const otherTheme = theme == 'dark' ? 'light' : 'dark';
+    setTheme(otherTheme);
+    localStorage.setItem('theme', otherTheme);
+  }
+
+  function toggleLocale() {
+    const otherLanguage = locale === 'en' ? 'pt' : 'en';
+    setLocale(otherLanguage);
+    localStorage.setItem('lang', otherLanguage);
   }
 
   return (
@@ -42,10 +48,15 @@ export function Navigation() {
             <a href="/#languages">{t('langs')}</a>
           </Link>
         </li>
-        <button onClick={handleThemeChange}>
+      </ul>
+      <div className={styles.options}>
+        <button className={styles.themeButton} onClick={handleThemeChange}>
           <img src="/images/icons/lamp.svg" style={{ filter: imgFilter }} />
         </button>
-      </ul>
+        <button className={styles.languageButton} onClick={toggleLocale}>
+          {locale}
+        </button>
+      </div>
     </nav>
   );
 }
