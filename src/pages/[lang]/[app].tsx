@@ -24,7 +24,7 @@ interface AppPageProps {
 export default function AppPage({ pageData }: AppPageProps) {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const { app, title, description, contentHtml, image, repo, link } = pageData;
+  const { app, title, description, contentHtml, repo, link } = pageData;
   const heroImage = theme === 'light' ? 'light/window.png' : 'window.png';
 
   return (
@@ -35,14 +35,16 @@ export default function AppPage({ pageData }: AppPageProps) {
       repo={repo}
     >
       <article dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      <a
-        href={link}
-        className="install-button"
-        target="_blank"
-        rel="noreferrer noopenenr"
-      >
-        {t('install')}
-      </a>
+      {link && (
+        <a
+          href={link}
+          className="install-button"
+          target="_blank"
+          rel="noreferrer noopenenr"
+        >
+          {t('install')}
+        </a>
+      )}
       {app && <Screens app={app} title={t('screenshots')} />}
     </Layout>
   );

@@ -18,14 +18,12 @@ export function Screens({ app, title }: ScreensProps) {
   return (
     <>
       <hr />
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <div className={styles.screens}>
         {screenshots.map(({ type, label }) => (
           <div key={type}>
             <h3>{label}</h3>
-            <a href="#" data-label="ver galeria">
-              <img src={`/images/screens/${app}/${path}${type}.png`} />
-            </a>
+            <img src={`/images/screens/${app}/${path}${type}.png`} />
           </div>
         ))}
       </div>

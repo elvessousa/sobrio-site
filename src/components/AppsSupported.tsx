@@ -9,8 +9,8 @@ export function AppsSupported() {
   const { locale } = useTranslation();
   const { theme } = useTheme();
 
-  const apps = ['VS Code', 'Neovim', 'Vim', 'Alacritty'];
-  const todo = ['Sublime Text', 'Atom', 'GNU Emacs', 'Tmux'];
+  const apps = ['VS Code', 'Neovim', 'Vim', 'Alacritty', 'Sublime Text'];
+  const todo = ['Atom', 'GNU Emacs', 'Tmux'];
   const imgFilter = theme == 'dark' ? 'invert(1)' : '';
 
   return (
