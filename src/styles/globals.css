@@ -16,7 +16,6 @@ body {
   --other: #5f5f5f;
   --red: #fd6389;
   --text: #eeeeee;
-  -webkit-font-smoothing: antialiased;
   background-color: var(--dark);
   color: var(--text);
   font-family: 'Quicksand', Cantarell, Helvetica Neue, sans-serif;
