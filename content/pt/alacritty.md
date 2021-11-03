@@ -13,42 +13,72 @@ Este é um tema para o **Alacritty**, o emulador de terminal. Ele usa as cores d
 ## Instalação
 
 ```yaml
-# Sobrio colors for Alacrity Terminal
-# Author: Elves Sousa <elvessousa.com.br>
-# Copy or append these values to your alacritty.yml file
-colors:
-  # Default colors
-  primary:
-    background: '#202020'
-    foreground: '#eeeeee'
+schemes:
+  # Sobrio colors for Alacrity Terminal
+  # Author: Elves Sousa <elvessousa.com.br>
+  # Copy or append these values to your alacritty.yml file
+  sobrio: &sobrio # Default colors
+    primary:
+      background: '#202020'
+      foreground: '#eeeeee'
 
-  # Normal colors
-  normal:
-    black: '#3a3b3f'
-    red: '#fd6389'
-    green: '#84afd7'
-    yellow: '#d7af87'
-    blue: '#d7af87'
-    magenta: '#d7d7ff'
-    cyan: '#78dce8'
-    white: '#eeeeee'
+    # Normal colors
+    normal:
+      black: '#3a3b3f'
+      red: '#fd6389'
+      green: '#2ec27e'
+      yellow: '#d7af87'
+      blue: '#d7af87'
+      magenta: '#d7d7ff'
+      cyan: '#78dce8'
+      white: '#eeeeee'
 
-  # Bright colors
-  bright:
-    black: '#727072'
-    red: '#fd6399'
-    green: '#d7d7ff'
-    yellow: '#d7af10'
-    blue: '#d7af10'
-    magenta: '#d7d7ff'
-    cyan: '#7cdce7'
-    white: '#ffffff'
+    # Bright colors
+    bright:
+      black: '#727072'
+      red: '#fd6399'
+      green: '#2ec27e'
+      yellow: '#d7af10'
+      blue: '#d7af10'
+      magenta: '#d7d7ff'
+      cyan: '#7cdce7'
+      white: '#ffffff'
+
+  # Sobrio light colors for Alacrity Terminal
+  # Author: Elves Sousa <elvessousa.com.br>
+  # Copy or append these values to your alacritty.yml file
+  sobrio-light: &sobrio-light # Default colors
+    primary:
+      background: '#eeeeee'
+      foreground: '#202020'
+
+    # Normal colors
+    normal:
+      black: '#eeeeee'
+      red: '#dd4c4f'
+      green: '#2ec27e'
+      yellow: '#af875f'
+      blue: '#af875f'
+      magenta: '#9787af'
+      cyan: '#5fafaf'
+      white: '#3a3b3f'
+
+    # Bright colors
+    bright:
+      black: '#727072'
+      red: '#fd6399'
+      green: '#2ec27e'
+      yellow: '#d7af87'
+      blue: '#d7af87'
+      magenta: '#d7d7ff'
+      cyan: '#7cdce7'
+      white: '#ffffff'
 ```
 
 A "instalação" é bem simples. Com o código acima, apenas siga estes quatro simples passos:
 
 1. Copie o código que você acabou de ver para o seu arquivo `alacritty.yml`, geralmente encontrado em `~/.config/alacritty/alacritty.yml`.
-2. Salve o arquivo.
+2. Adicione a linha `colors: *sobrio` ou `colors: *sobrio-light` e salve o arquivo.
 3. ???
 4. Lucre!
 
