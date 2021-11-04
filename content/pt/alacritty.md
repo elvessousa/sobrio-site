@@ -3,8 +3,8 @@ lang: pt
 title: 'Sobrio para Alacritty'
 description: 'Um tema para Alacritty cores sóbrias, daí o nome'
 image: '/images/screens/alacritty/window.png'
-link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
-repo: 'sobrio'
+link: 'https://github.com/elvessousa/sobrio-alacritty/archive/refs/heads/master.zip'
+repo: 'sobrio-alacritty'
 app: 'alacritty'
 ---
 
@@ -17,7 +17,7 @@ schemes:
   # Sobrio colors for Alacrity Terminal
   # Author: Elves Sousa <elvessousa.com.br>
   # Copy or append these values to your alacritty.yml file
-  sobrio: &sobrio # Default colors
+  sobrio: &sobrio
     primary:
       background: '#202020'
       foreground: '#eeeeee'
@@ -47,7 +47,7 @@ schemes:
   # Sobrio light colors for Alacrity Terminal
   # Author: Elves Sousa <elvessousa.com.br>
   # Copy or append these values to your alacritty.yml file
-  sobrio-light: &sobrio-light # Default colors
+  sobrio-light: &sobrio-light
     primary:
       background: '#eeeeee'
       foreground: '#202020'
