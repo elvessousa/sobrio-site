@@ -3,14 +3,15 @@ lang: pt
 title: 'Sobrio para NeoVim'
 description: 'Um tema para o NeoVim com cores sóbrias, daí o nome'
 image: '/images/screens/vim/window.png'
-link: 'https://github.com/elvessousa/sobrio/archive/refs/heads/master.zip'
 repo: 'sobrio'
 app: 'vim'
 ---
 
 Este é um tema para o **NeoVim**, com cores sóbrias (ao menos para mim), daí o nome. Ele suporta fontes em itálico, também. A fonte usada nas telas é a Victor Mono. No momento, eu testei apenas com o NeoVim, mas ele deve funcionar com Vim também. Para a melhor experiência, confira se seu terminal suporta pelo menos 256 cores.
 
-## Instalação
+---
+
+## Instalação manual
 
 Para usá-lo, basta seguir estes passos:
 
@@ -18,6 +19,50 @@ Para usá-lo, basta seguir estes passos:
 2. Mude o seu tema para o sobrio usando o comando: `:colorscheme sobrio`.
 3. ???
 4. Lucre!
+
+---
+
+## Usando o Vim-Plug
+
+Adicione este repositório na seção do Vim-Plug em seu arquivo de configuração:
+
+```vim
+call plug#begin()
+	Plug 'elvessousa/sobrio'
+call plug#end()
+```
+
+Após dar um `source` no arquivo (ou reiniciar o editor), rode `:PlugInstall` e reinicie o Neovim.
+
+---
+
+## Usando o Vundle
+
+Adicione este repositório na seção do Vundle em seu arquivo de configuração:
+
+```vim
+call vundle#begin()
+	Plugin 'elvessousa/sobrio'
+call vundle#end()
+```
+
+Após dar um `source` no arquivo (ou reiniciar o editor), rode `:PluginInstall` e reinicie o Neovim.
+
+---
+
+## Usando o NeoBundle
+
+Adicione este repositório na seção do NeoBundle em seu arquivo de configuração:
+
+```vim
+call neobundle#begin()
+	NeoBundleFetch 'elvessousa/sobrio'
+call neobundle#end()
+```
+
+Após dar um `source` no arquivo (ou reiniciar o editor), rode `:NeoBundleInstall` e reinicie o Neovim.
+
+---
 
 ## Configurar como tema padrão
 
