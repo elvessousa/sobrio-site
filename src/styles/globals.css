@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   --transparent: rgba(0, 0, 0, 0);
   --blue: #84afd7;
@@ -23,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  transition: all 0.2s ease-in-out;
 }
 
 body.light {
@@ -39,6 +36,13 @@ body.light {
   --other: #4e4e4e;
   --red: #dd4c4f;
   --text: #202020;
+  transition: all 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: var(--light) transparent;
+  scrollbar-width: thin;
 }
 
 h1 {
