@@ -11,7 +11,7 @@ export function Analytics({ id }: AnalyticsProps) {
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${id}"`}
       />
-      <Script strategy="lazyOnload">
+      <Script id="analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

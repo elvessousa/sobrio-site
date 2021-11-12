@@ -23,7 +23,10 @@ export function Screens({ app, title }: ScreensProps) {
         {screenshots.map(({ type, label }) => (
           <div key={type}>
             <h3>{label}</h3>
-            <img src={`/images/screens/${app}/${path}${type}.png`} />
+            <img
+              alt={`${type}- screenshot`}
+              src={`/images/screens/${app}/${path}${type}.png`}
+            />
           </div>
         ))}
       </div>

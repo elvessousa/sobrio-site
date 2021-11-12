@@ -21,6 +21,7 @@ export function AppsSupported() {
           <Link key={app} href={`/${locale}/${name}`}>
             <a className={styles.app}>
               <img
+                alt={app}
                 src={`/images/icons/apps/${name}.svg`}
                 style={{ filter: imgFilter }}
               />
@@ -32,6 +33,7 @@ export function AppsSupported() {
       {todo.map((app) => (
         <div key={app} className={styles.app} style={{ opacity: 0.3 }}>
           <img
+            alt={app}
             src={`/images/icons/apps/${app
               .replace(/\s/g, '')
               .toLowerCase()}.svg`}

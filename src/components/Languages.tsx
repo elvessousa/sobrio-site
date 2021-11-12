@@ -27,6 +27,7 @@ export function Languages() {
       {languages.map((lang) => (
         <div key={lang} className={styles.language}>
           <img
+            alt={lang}
             src={`/images/icons/languages/${lang.toLowerCase()}.svg`}
             style={{ filter: imgFilter }}
           />

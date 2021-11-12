@@ -26,7 +26,7 @@ export function Navigation() {
     <nav className={styles.navigation}>
       <div className={styles.brand}>
         <h1>
-          <img src={`/logo-${theme}.png`} />
+          <img src={`/logo-${theme}.png`} alt="Sobrio logo" />
           <Link href="/">
             <a>Sobrio</a>
           </Link>
@@ -35,23 +35,27 @@ export function Navigation() {
       <ul>
         <li>
           <Link href="/#apps">
-            <a href="/#apps">Apps</a>
+            <a>Apps</a>
           </Link>
         </li>
         <li>
           <Link href="/#palette">
-            <a href="/#palette">{t('palette')}</a>
+            <a>{t('palette')}</a>
           </Link>
         </li>
         <li>
           <Link href="/#languages">
-            <a href="/#languages">{t('langs')}</a>
+            <a>{t('langs')}</a>
           </Link>
         </li>
       </ul>
       <div className={styles.options}>
         <button className={styles.themeButton} onClick={handleThemeChange}>
-          <img src="/images/icons/lamp.svg" style={{ filter: imgFilter }} />
+          <img
+            alt="Dark/Light theme"
+            src="/images/icons/lamp.svg"
+            style={{ filter: imgFilter }}
+          />
         </button>
         <button className={styles.languageButton} onClick={toggleLocale}>
           {locale}

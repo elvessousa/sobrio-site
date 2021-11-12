@@ -26,8 +26,8 @@ export default function Home() {
           not my type.
         </p>
         <p>
-          It's been actively developed: more apps supported and variants to come
-          soon. For those who like it white, a light theme is available.
+          More apps supported and variants to come soon. For those who like it
+          white, a light theme is available.
         </p>
       </section>
       <hr />
